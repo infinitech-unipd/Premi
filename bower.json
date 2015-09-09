@@ -1,0 +1,23 @@
+{
+  "name": "premi",
+  "version": "1.0.0",
+  "description": "Didactic project of Software Engineering course held in Università degli Studi di Padova during Academic Year 2014-2015.",
+  "dependencies": {
+    "amaranth": "https://google-fonts.azurewebsites.net/googleFonts/amaranth?family=Amaranth:400,400italic,700,700italic",
+    "angular": "~1.2",
+    "angular-animate": "~1.2",
+    "angular-cookies": "~1.2",
+    "angular-mocks": "~1.2",
+    "angular-resource": "~1.2",
+    "angular-sanitize": "~1.2",
+    "angular-touch": "~1.2",
+    "angular-ui-router": "~0.2.11",
+    "angular-ui-utils": "~0.1.1",
+    "fabric": "~1.5.0",
+    "josefinSans": "https://google-fonts.azurewebsites.net/googleFonts/josefinSans?family=Josefin+Sans:400,400italic,700,700italic,300italic,300",
+    "jquery": "~2.1.4",
+    "jspdf": "1.0.272",
+    "materialize": "~0.97.0",
+    "ubuntuMono": "https://google-fonts.azurewebsites.net/googleFonts/ubuntuMono?family=Ubuntu+Mono:400,400italic,700,700italic"
+  }
+}

@@ -1,0 +1,33 @@
+<div data-ng-init="init()" data-ng-controller="PlayerController">
+  <div id="impress">
+    <canvas id="container{{$index}}" class="step" data-ng-repeat="container in containers"
+            data-x="{{(container.overviewLeft/150)*canvasSize}}"
+            data-y="{{(container.overviewTop/150)*canvasSize}}"
+            data-rotate="{{container.overviewAngle}}"
+            data-scale="{{container.overviewScale}}"
+            on-last-slide>
+    </canvas>
+  </div>
+
+  <div class="deep-orange navigation-btns">
+    <div class="row">
+      <div class="col s5 waves-effect waves-light pad" data-ng-click="prev()">
+        <div class="white-text right">
+          <i class="material-icons">arrow_back</i> Previous
+        </div>
+      </div>
+      <div class="col s5 offset-s2 waves-effect waves-light pad" data-ng-click="next()">
+        <dib class="white-text left">
+          Next <i class="material-icons">arrow_forward</i>
+        </dib>
+      </div>
+    </div>
+  </div>
+
+  <div class="fixed-action-btn">
+    <a title="Fullscreen" class="btn-floating btn-large grey darken-2"
+       data-ng-click="fullscreen()">
+      <i class="large material-icons">fullscreen</i>
+    </a>
+  </div>
+</div>

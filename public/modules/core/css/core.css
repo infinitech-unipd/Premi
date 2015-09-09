@@ -1,0 +1,99 @@
+body {
+  min-height: 100vh;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+  -webkit-flex: 1 0 auto;
+}
+.card {
+  margin: 5px;
+}
+@media (min-width: 993px) {
+  .brand-logo {
+    margin-left: 10px;
+  }
+  .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+  }
+}
+@media (min-width: 601px) {
+  .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+  }
+}
+.button-collapse {
+  margin-left: 10px;
+}
+.input-field input[type=text]:focus + label {
+  color: #ff5722;
+}
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #ff5722;
+  box-shadow: 0 1px 0 0 #ff5722;
+}
+.input-field input[type=email]:focus + label {
+  color: #ff5722;
+}
+.input-field input[type=email]:focus {
+  border-bottom: 1px solid #ff5722;
+  box-shadow: 0 1px 0 0 #ff5722;
+}
+.input-field input[type=password]:focus + label {
+  color: #ff5722;
+}
+.input-field input[type=password]:focus {
+  border-bottom: 1px solid #ff5722;
+  box-shadow: 0 1px 0 0 #ff5722;
+}
+.switch label input[type=checkbox]:first-child:checked + .lever {
+  background-color: #ff7043;
+}
+.switch label input[type=checkbox]:first-child:checked + .lever:after {
+  background-color: #ff5722;
+}
+.modal-content label {
+  min-width: 300px;
+}
+.modal-content .input-field {
+  min-height: 80px;
+}
+*[data-ng-click] {
+  cursor: pointer;
+}
+.material-icons, .icon-text {
+  vertical-align: middle;
+}
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+  background: #ff5722;
+  margin-right: 10px;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid #ffab91;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #616161;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+canvas {
+  -webkit-box-shadow: 3px 3px 30px 0 rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 3px 3px 30px 0 rgba(50, 50, 50, 0.75);
+  box-shadow: 3px 3px 30px 0 rgba(50, 50, 50, 0.75);
+}

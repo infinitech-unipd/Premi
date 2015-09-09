@@ -1,0 +1,27 @@
+<div id="slide-out2" class="side-nav fixed container-nav">
+  <ul class="fixed">
+    <li class="container center-align" data-ng-repeat="container in containers" on-last-repeat>
+      <div class="center-align canvas-container">
+        <div class="delete-btn-container">
+          <a class="waves-effect waves-light btn-floating btn-medium deep-orange" data-ng-click="removeContainer($index)"><i class="material-icons">close</i></a>
+        </div>
+        <canvas id="container{{$index}}" data-ng-click="selectContainer($index)"></canvas>
+      </div>
+
+      <div class="btn-container center-align">
+        <div class="move-btn-container">
+          <a class="waves-effect waves-light btn-floating btn-medium grey darken-2" data-ng-click="moveContainerUp($index)"><i class="material-icons">keyboard_arrow_up</i></a>
+          <a class="waves-effect waves-light btn-floating btn-medium grey darken-2" data-ng-click="moveContainerDown($index)"><i class="material-icons">keyboard_arrow_down</i></a>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <a class="btn waves-effect waves-light deep-orange white-text"
+     data-ng-click="insertContainer()"><i class="material-icons">add</i></a>
+</div>
+
+
+
+
+

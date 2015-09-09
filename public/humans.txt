@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Simone Campagna
+  Enrico Ceron
+  Mattia Favaron
+  Antonio Iacobucci
+  Tommaso Miotto
+  Alex Ruzzante
+
+# THANKS
+
+  Nicole Palma
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3, JavaScript, JSON
+  jQuery, Materialize, MEAN.JS, impress.js, Fabric.js, jsPDF

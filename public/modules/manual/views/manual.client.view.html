@@ -1,0 +1,263 @@
+<div id="start" data-ng-controller="ManualController">
+  <div class="row">
+    <div class="col s12 l4 left">
+      <h2>Indice</h2>
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><a href="#primo-accesso">Primo accesso</a></div>
+        </li>
+        <li>
+          <div class="collapsible-header">Registrazione</div>
+          <div class="collapsible-body"><p><a href="#inserimento-credenziali">Inserimento credenziali</a></p></div>
+          <div class="collapsible-body"><p><a href="#validità-dei-dati">Validità dei dati</a></p></div>
+        </li>
+        <li>
+          <div class="collapsible-header">Home page</div>
+          <div class="collapsible-body"><p><a href="#funzionalità-della-home-page">Funzionalità della home page</a></p></div>
+          <div class="collapsible-body"><p><a href="#gestione-del-tuo-account">Gestione del tuo account</a></p></div>
+          <div class="collapsible-body"><p><a href="#creare-una-nuova-presentazione">Creare una nuova presentazione</a></p></div>
+          <div class="collapsible-body"><p><a href="#operazioni-su-una-presentazione-esistente">Operazioni su una presentazione esistente</a></p></div>
+        </li>
+        <li>
+          <div class="collapsible-header">Editor</div>
+          <div class="collapsible-body"><p><a href="#funzionalità-delleditor">Funzionalità dell'editor</a></p></div>
+          <div class="collapsible-body"><p><a href="#menù-delleditor">Menù dell'editor</a></p></div>
+          <div class="collapsible-body"><p><a href="#operazioni-sulla-presentazione">Operazioni sulla presentazione</a></p></div>
+          <div class="collapsible-body"><p><a href="#operazioni-sugli-oggetti">Operazioni sugli oggetti</a></p></div>
+          <div class="collapsible-body"><p><a href="#overview">Overview</a></p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><a href="#player">Player</a></div>
+        </li>
+        <li>
+          <div class="collapsible-header">Messaggi d'errore</div>
+          <div class="collapsible-body"><p><a href="#errori-durante-la-registrazione">Registrazione</a></p></div>
+          <div class="collapsible-body"><p><a href="#errori-durante-laccesso-al-sistema">Accesso al sistema</a></p></div>
+          <div class="collapsible-body"><p><a href="#errori-durante-la-creazione-di-una-presentazione">Creazione di una presentazione</a></p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><a href="#requisiti-minimi">Requisiti minimi</a></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><a href="#segnalazione-bug">Segnalazione bug</a></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col s12 l8 user-manual">
+      <h1>Manuale Utente</h1>
+      <h2 id="primo-accesso">Primo accesso</h2>
+      <p>Se stai utilizzando Premi per per la prima volta potrai creare un account per sfruttare appieno di tutti i servizi cliccando su &quot;Sign up&quot;. Se invece possiedi già un account attivo, potrai accedere al tuo account cliccando su &quot;Sign in&quot;.</p>
+      <div class="figure center-align">
+        <img class="hide-on-med-and-down" src="modules/manual/img/desktop/first_access.png" alt="Schermata iniziale di Premi" />
+        <img class="hide-on-large-only" src="modules/manual/img/mobile/first_access_mobile.png" alt="Schermata iniziale di Premi" />
+        <p class="caption">Schermata iniziale di Premi</p>
+      </div>
+      <h2 id="registrazione">Registrazione</h2>
+      <h3 id="inserimento-credenziali">Inserimento credenziali</h3>
+      <p>Per accedere alla pagina di registrazione dalla home page è necessario fare clic su &quot;Sign up&quot; in alto a destra sulla barra di navigazione in ambiente desktop, sulla side nav scorrendo da sinistra in ambiente mobile. Verrà aperta la pagina di inserimento delle credenziali dove è necessario specificare:</p>
+      <ul>
+        <li>nome;</li>
+        <li>cognome;</li>
+        <li>indirizzo e-mail;</li>
+        <li>username;</li>
+        <li>password;</li>
+        <li>password di conferma.</li>
+      </ul>
+      <p>Quando tutti i dati saranno stati inseriti correttamente potrai confermare la registrazione cliccando sul pulsante &quot;SIGN UP&quot; in fondo alla pagina.</p>
+      <div class="figure center-align">
+        <img class="hide-on-med-and-down" src="modules/manual/img/desktop/signup.png" alt="Pagina di registrazione" />
+        <img class="hide-on-large-only" src="modules/manual/img/mobile/signup_mobile.png" alt="Pagina di registrazione" />
+        <p class="caption">Pagina di registrazione</p>
+      </div>
+      <h3 id="validità-dei-dati">Validità dei dati</h3>
+      <p>Durante la registrazione, l'applicativo controllerà la validità dei dati inseriti, quali:</p>
+      <ul>
+        <li>l'indirizzo e-mail deve avere un formato valido;</li>
+        <li>lo username deve essere univoco all'interno del sistema;</li>
+        <li>le due password inserite devono coincidere ed avere una lunghezza compresa tra i 6 e i 16 caratteri qualsiasi.</li>
+      </ul>
+      <p>Qualora una delle condizioni sopra citate non si verificasse la procedura sarà interrotta e apparirà un messaggio di errore che ne spiega le cause. È così possibile correggere gli eventuali errori.</p>
+      <h2 id="home-page">Home page</h2>
+      <h3 id="funzionalità-della-home-page">Funzionalità della home page</h3>
+      <p>Una volta registrato (o autenticato) al servizio, verrai reindirizzato alla home page dove ti verrà mostrato l'elenco delle presentazioni da te create oppure un messaggio che evidenzia il fatto che non hai ancora creato alcuna presentazione. Dalla home page è possibile:</p>
+      <ul>
+        <li>creare una nuova presentazione;</li>
+        <li>editare una delle presentazioni esistenti;</li>
+        <li>visualizzare le presentazioni pubbliche create da te e gli altri utenti;</li>
+        <li>visualizzare il tuo profilo;</li>
+        <li>modificare le informazioni di profilo;</li>
+        <li>modificare la tua password.</li>
+      </ul>
+      <div class="figure center-align">
+        <img class="hide-on-med-and-down" src="modules/manual/img/desktop/home_empty.png" alt="Pagina di registrazione" />
+        <img class="hide-on-large-only" src="modules/manual/img/mobile/home_empty_mobile.png" alt="Pagina di registrazione" />
+        <p class="caption">Home page senza presentazioni</p>
+      </div>
+      <div class="figure center-align">
+        <img class="hide-on-med-and-down" src="modules/manual/img/desktop/home_not_empty.png" alt="Pagina di registrazione" />
+        <img class="hide-on-large-only" src="modules/manual/img/mobile/home_not_empty_mobile.png" alt="Pagina di registrazione" />
+        <p class="caption">Home page con presentazioni</p>
+      </div>
+      <h3 id="gestione-del-tuo-account">Gestione del tuo account</h3>
+      <p>Se hai effettuato l'accesso, nelle varie pagine del servizio è possibile, attraverso il menù a tendina situato nell'header a destra in ambiente desktop e nella side nav laterale in ambiente mobile, accedere alla tua area riservata.</p>
+      <div class="figure center-align">
+        <img class="hide-on-med-and-down" src="modules/manual/img/desktop/user_dropdown.png" alt="Pagina di registrazione" />
+        <img class="hide-on-large-only" src="modules/manual/img/mobile/user_dropdown_mobile.png" alt="Pagina di registrazione" />
+        <p class="caption">Area riservata</p>
+      </div>
+      <p>Le operazioni possibili per la gestione del tuo account sono:</p>
+      <ul>
+        <li>modificare le tue informazioni di profilo andando alla pagina appositamente dedicata;</li>
+        <li>cambiare la tua password;</li>
+        <li>effettuare il logout dal sistema.</li>
+      </ul>
+      <h3 id="creare-una-nuova-presentazione">Creare una nuova presentazione</h3>
+      <p>Per creare una nuova presentazione dalla home page è necessario premere il bottone circolare situato in basso a destra; al clic si aprirà una finestra di dialogo che chiederà di inserire:</p>
+      <ul>
+        <li>il titolo (lunghezza massima 40 caratteri);</li>
+        <li>la descrizione della presentazione (lunghezza massima 240 caratteri).</li>
+      </ul>
+      <p>A quel punto potrai decidere di cliccare su &quot;CREATE&quot; per creare una nuova presentazione.</p>
+      <h3 id="operazioni-su-una-presentazione-esistente">Operazioni su una presentazione esistente</h3>
+      <p>Se hai già creato delle presentazioni potrai vederle situate nella home page dentro a degli appositi riquadri di colore grigio. Ognuno di questi riquadri contiene alcune informazioni sulla presentazione:</p>
+      <ul>
+        <li>titolo;</li>
+        <li>descrizione;</li>
+        <li>data di creazione;</li>
+        <li>data dell'ultima modifica effettuata.</li>
+      </ul>
+      <p>Nella parte inferiore del riquadro sono invece posizionati dei simboli che mostrano le operazioni possibili da effettuare sulla presentazione esistente. In particolare cliccandoci sopra è possibile (in ordine da sinistra verso destra):</p>
+      <ul>
+        <li><i class="material-icons grey-text text-darken-2">play_arrow</i> avviare la riproduzione della presentazione;</li>
+        <li><i class="material-icons grey-text text-darken-2">edit</i> modificare titolo e descrizione della presentazione;</li>
+        <li><i class="material-icons grey-text text-darken-2">web</i> editare la presentazione;</li>
+        <li><i class="material-icons grey-text text-darken-2">share</i> condividere il link della presentazione;</li>
+        <li><i class="material-icons grey-text text-darken-2">delete</i> cancellare la presentazione.</li>
+      </ul>
+      <h2 id="editor">Editor</h2>
+      <h3 id="funzionalità-delleditor">Funzionalità dell'editor</h3>
+      <p>L'editor rappresenta l'ambiente dove puoi modificare a tuo piacimento la presentazione selezionata.</p>
+      <p>Se è la prima volta che la presentazione viene editata ti si aprirà l'editor senza alcun contenitore come illustrato in figura.</p>
+      <div class="figure center-align">
+        <img src="modules/manual/img/desktop/editor_empty.png" alt="Editor senza contenitori" />
+        <p class="caption">Editor senza contenitori</p>
+      </div>
+      <p>Da qua è possibile cominciare ad aggiungere contenitori alla propria presentazione attraverso il pulsante situato in basso a sinistra dello schermo, nella barra laterale. Una volta aggiunti dei contenitori la situazione apparirà simile alla seguente dove nella barra laterale sono presenti i vari contenitori che compongono la presentazione.</p>
+      <div class="figure center-align">
+        <img src="modules/manual/img/desktop/editor_not_empty.png" alt="Editor con contenitori" />
+        <p class="caption">Editor con contenitori</p>
+      </div>
+      <p>Attraverso la barra laterale è possibile:</p>
+      <ul>
+        <li>selezionare un contenitore;</li>
+        <li>eliminare un contenitore;</li>
+        <li>spostare in basso di una posizione un contenitore;</li>
+        <li>spostare in alto di una posizione un contenitore.</li>
+      </ul>
+      <p>Selezionando uno di questi contenitori si aprirà il canvas dove è possibile modificare il contenitore scelto. Sarà permesso inserire del testo, delle immagini (tramite URL) oppure delle forme geometriche attraverso il pulsante in basso a destra.</p>
+      <h3 id="menù-delleditor">Menù dell'editor</h3>
+      <div class="figure center-align">
+        <img src="modules/manual/img/desktop/editor_menu.png" alt="Menù dell&#39;editor" />
+        <p class="caption">Menù dell'editor</p>
+      </div>
+      <p>Nell'ambiente editor la barra in alto caratterizza il menù. Quest'ultimo offre all'utente, la possibilità di effettuare diverse operazioni sulla presentazione o sugli oggetti selezionati. Cliccando sul titolo della presentazione puoi modificarlo assieme alla descrizione della presentazione.</p>
+      <h3 id="operazioni-sulla-presentazione">Operazioni sulla presentazione</h3>
+      <div class="figure center-align">
+        <img src="modules/manual/img/desktop/menu_general.png" alt="Menù - Parte riguardante la presentazione" />
+        <p class="caption">Menù - Parte riguardante la presentazione</p>
+      </div>
+      <p>Nell'ambiente editor la parte del menù visibile in figura riguarda le operazioni che si possono effettuare sulle presentazioni in fase di modifica. In particolare, da sinistra verso destra, è possibile:</p>
+      <ul>
+        <li><i class="material-icons">home</i> tornare allora propria home page;</li>
+        <li><i class="material-icons">print</i> andare all'anteprima di stampa della presentazione;</li>
+        <li><i class="material-icons">save</i> salvare la presentazione;</li>
+        <li><i class="material-icons">play_arrow</i> avviare la riproduzione della presentazione;</li>
+        <li><i class="material-icons">dashboard</i> accedere all'overview;</li>
+        <li><i class="material-icons">aspect_ratio</i> modificare l'aspect ratio dei contenitori.</li>
+      </ul>
+      <h3 id="operazioni-sugli-oggetti">Operazioni sugli oggetti</h3>
+      <div class="figure center-align">
+        <img src="modules/manual/img/desktop/menu_object.png" alt="Menù - Parte riguardante il contenitore corrente e l&#39;oggetto selezionato" />
+        <p class="caption">Menù - Parte riguardante il contenitore corrente e l'oggetto selezionato</p>
+      </div>
+      <p>Nell'ambiente editor la parte del menù evidenziata in figura riguarda le operazioni che puoi effettuare sul contenitore attualmente in fase di editing e sui suoi oggetti. In particolare, da sinistra verso destra, è possibile:</p>
+      <ul>
+        <li><i class="material-icons">format_color_fill</i> cambiare il colore di sfondo del contenitore;</li>
+        <li>&quot;FONT&quot; cambiare il tipo di font su un oggetto testuale attualmente selezionato;</li>
+        <li><i class="material-icons">format_color_text</i> cambiare il colore dell'oggetto selezionato se questo è del testo oppure una figura;</li>
+        <li><i class="material-icons">format_align_left</i> allineare il testo a sinistra;</li>
+        <li><i class="material-icons">format_align_center</i> allineare il testo al centro;</li>
+        <li><i class="material-icons">format_align_right</i> allineare il testo a destra;</li>
+        <li><i class="material-icons">format_clear</i> togliere la formattazione precedentemente attribuitagli;</li>
+        <li><i class="material-icons">format_bold</i> dare lo stile grassetto al testo;</li>
+        <li><i class="material-icons">format_italic</i> dare lo stile corsivo al testo;</li>
+        <li><i class="material-icons">delete</i> eliminare l'oggetto selezionato nel contenitore.</li>
+      </ul>
+      <h3 id="overview">Overview</h3>
+      <p>Nell'overview puoi cambiare la posizione dei contenitori a tuo piacimento. Inizialmente essi si presenteranno in ordine da sinistra verso destra e dall'alto verso il basso. Potrai poi posizionarli come meglio credi.</p>
+      <p>È possibile utilizzare i pulsanti in basso a sinistra dello schermo per ordinarli automaticamente in modi diversi.</p>
+      <div class="figure center-align">
+        <img src="modules/manual/img/desktop/overview.png" alt="Overview della presentazione" />
+        <p class="caption">Overview della presentazione</p>
+      </div>
+      <h2 id="player">Player</h2>
+      <p>Nel player è possibile riprodurre la presentazione selezionata. Si presenta come in figura e puoi navigare tra i contenitori attraverso la barra spaziatrice o le frecce della tastiera in ambiente desktop, facendo un tap o uno swipe in ambiente mobile.</p>
+      <div class="figure center-align">
+        <img class="hide-on-med-and-down" src="modules/manual/img/desktop/player.png" alt="Pagina di registrazione" />
+        <img class="hide-on-large-only" src="modules/manual/img/mobile/player_mobile.png" alt="Pagina di registrazione" />
+        <p class="caption">Player di Premi</p>
+      </div>
+      <h2 id="messaggi-derrore">Messaggi d'errore</h2>
+      <h3 id="errori-durante-la-registrazione">Errori durante la registrazione</h3>
+      <p>Nella registrazione tutti i campi sono obbligatori quindi la mancanza di uno di essi sicuramente genererà la comparsa di un popup che segnala l'errore. Inoltre, questi errori, sono gli stessi che riguardano il processo di modifica del proprio profilo.</p>
+      <ul>
+        <li><strong>Please fill in your first id</strong>: indica che non hai inserito il tuo nome.</li>
+        <li><strong>Please fill in your last id</strong>: indica che non hai inserito il tuo cognome.</li>
+        <li><strong>Please fill in your email</strong>: indica che non hai inserito la tua email oppure quella inserita non rispetta la corretta formattazione.</li>
+        <li><strong>Please fill in a username</strong>: indica che non hai inserito il tuo username.</li>
+        <li><strong>Username already exists</strong>: indica che l'username da te inserito è già utilizzato da un altro utente del sistema; esso deve essere univoco.</li>
+        <li><strong>Password length should be 6-16</strong>: indica che la password deve avere una lunghezza compresa fra i 6 e i 16 caratteri.</li>
+        <li><strong>Passwords do not match</strong>: indica che il contenuto dei campi &quot;Password&quot; e &quot;Password confirm&quot; non coincide.</li>
+      </ul>
+      <h3 id="errori-durante-laccesso-al-sistema">Errori durante l'accesso al sistema</h3>
+      <ul>
+        <li><strong>Missing credentials</strong>: indica che non hai inserito una o entrambe le tue credenziali.</li>
+        <li><strong>Unknown user or invalid password</strong>: indica che non hai inserito in modo corretto lo username o la password.</li>
+      </ul>
+      <h3 id="errori-durante-la-creazione-di-una-presentazione">Errori durante la creazione di una presentazione</h3>
+      <p>Si possono riscontrare alcuni errori anche in fase di creazione della presentazione e vengono di seguito descritti.</p>
+      <ul>
+        <li><strong>A presentation must have a title</strong>: indica che non hai inserito il titolo della presentazione che è un campo obbligatorio.</li>
+        <li><strong>The title should be shorter</strong>: indica che hai superato la lunghezza massima del titolo prevista di 40 caratteri.</li>
+        <li><strong>The description is too long</strong>: indica che la descrizione della presentazione supera i 240 caratteri.</li>
+      </ul>
+      <h2 id="requisiti-minimi">Requisiti minimi</h2>
+      <p>I requisiti minimi <strong>desktop</strong> per usufruire di Premi sono:</p>
+      <ul>
+        <li>2GB di memoria RAM;</li>
+        <li>un browser supportato tra Chrome, Firefox e Safari.</li>
+      </ul>
+      <p>I requisiti minimi <strong>mobile</strong> per usufruire di Premi sono:</p>
+      <ul>
+        <li>sistema operativo iOS 8+ o Android 4.0+;</li>
+        <li>1GB di memoria RAM;</li>
+        <li>un browser supportato tra Chrome o Safari.</li>
+      </ul>
+      <h2 id="segnalazione-bug">Segnalazione bug</h2>
+      <p>Per eventuali segnalazioni di bug o problematiche di vario genere ti preghiamo di scriverci quanto prima all'indirizzo <a href="mailto:info.infinitech@gmail.com">info.infinitech@gmail.com</a>.</p>
+      <p>Nella segnalazione sarà necessario comunicare:</p>
+      <ul>
+        <li>il tipo di problema;</li>
+        <li>hardware e software in uso;</li>
+        <li>i passi necessari a riprodurre la medesima situazione.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="up-button" class="fixed-action-btn">
+    <a class="btn-floating btn-large grey darken-2 modal-trigger" href="#">
+      <i class="large material-icons">keyboard_arrow_up</i>
+    </a>
+  </div>
+</div>

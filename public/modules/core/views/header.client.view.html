@@ -1,0 +1,80 @@
+<ul id="user-dropdown" class="dropdown-content">
+  <li>
+    <a href="/#!/settings/profile" class="grey-text">Edit profile</a>
+  </li>
+  <li>
+    <a href="/#!/settings/password" class="grey-text">Change password</a>
+  </li>
+  <li class="divider"></li>
+  <li>
+    <a href="/auth/signout" class="grey-text">Signout</a>
+  </li>
+</ul>
+
+<div data-ng-controller="HeaderController">
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper deep-orange">
+        <a href="/#!/" class="brand-logo">Premi</a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="/#!/" title="Home" class="waves-effect waves-light">
+              <i class="material-icons">home</i>
+            </a>
+          </li>
+          <li>
+            <a href="/#!/presentations" title="Explore public presentations"
+               class="waves-effect waves-light">
+              <i class="material-icons">explore</i>
+            </a>
+          </li>
+          <li>
+            <a href="/#!/manual#editor" title="Help" class="waves-effect waves-light">
+              <i class="material-icons">help</i>
+            </a>
+          </li>
+          <li data-ng-hide="authentication.user">
+            <a href="/#!/signup">Sign up</a>
+          </li>
+          <li data-ng-hide="authentication.user">
+            <a href="/#!/signin">Sign in</a>
+          </li>
+          <li data-ng-show="authentication.user">
+            <a href="#!" class="dropdown-button" data-activates="user-dropdown">
+              <span data-ng-bind="authentication.user.displayName"></span>
+              <i class="material-icons right">arrow_drop_down</i>
+            </a>
+          </li>
+        </ul>
+        <ul id="slide-out" class="side-nav">
+          <li>
+            <a href="/#!/">Home</a>
+          </li>
+          <li>
+            <a href="/#!/presentations">Explore</a>
+          </li>
+          <li class="divider"></li>
+          <li data-ng-hide="authentication.user">
+            <a href="/#!/signup">Sign up</a>
+          </li>
+          <li data-ng-hide="authentication.user">
+            <a href="/#!/signin">Sign in</a>
+          </li>
+          <li data-ng-show="authentication.user">
+            <a href="/#!/settings/profile">Edit profile</a>
+          </li>
+          <li data-ng-show="authentication.user">
+            <a href="/#!/settings/password">Change password</a>
+          </li>
+          <li class="divider"></li>
+          <li data-ng-show="authentication.user">
+            <a href="/auth/signout">Signout</a>
+          </li>
+        </ul>
+        <a href="#!" data-activates="slide-out" class="button-collapse">
+          <i class="mdi-navigation-menu"></i>
+        </a>
+      </div>
+    </nav>
+  </div>
+</div>

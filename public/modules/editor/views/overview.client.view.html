@@ -1,0 +1,17 @@
+<div class="container-over" data-ng-init="init()" data-ng-controller="OverviewController">
+  <div class="deep-orange nav-over valign-wrapper">
+    <a class="waves-effect waves-light btn-flat white-text" data-ng-click="return(true)"><i class="material-icons left">check</i>Save and close</a>
+    <a class="waves-effect waves-light btn-flat white-text" data-ng-click="return()"><i class="material-icons left">close</i>Close without saving</a>
+  </div>
+
+  <div class="overview-wrapper">
+    <canvas id="over"></canvas>
+  </div>
+
+  <ul id="staggered-test" class="col s1">
+    <li title="Arrange random"><a class="waves-effect waves-light btn-floating grey darken-3 white-text" data-ng-click="arrange('random')"><i class="material-icons left">loop</i></a></li>
+    <li title="Arrange horizontally"><a class="waves-effect waves-light btn-floating grey darken-3 white-text" data-ng-click="arrange('horrizontal')"><i class="material-icons left">view_column</i></a></li>
+    <li title="Arrange grid"><a class="waves-effect waves-light btn-floating grey darken-3 white-text" data-ng-click="arrange('grid')"><i class="material-icons left">view_module</i></a></li>
+    <li title="Arrange vertically"><a class="waves-effect waves-light btn-floating grey darken-3 white-text" data-ng-click="arrange('vertical')"><i class="material-icons left">view_stream</i></a></li>
+  </ul>
+</div>

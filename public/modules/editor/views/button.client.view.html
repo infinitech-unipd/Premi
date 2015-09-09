@@ -1,0 +1,49 @@
+<div class="fixed-action-btn" data-ng-show="justInitialized">
+  <a class="btn-floating btn-large grey darken-4">
+    <i class="large material-icons">add</i>
+  </a>
+
+  <ul>
+    <li><a title="Aggiungi testo" class="btn-floating grey darken-1" data-ng-click="addText()">
+      <i class="material-icons">text_format</i></i>
+    </a></li>
+    <li><a title="Aggiungi immagine" class="btn-floating grey darken-2" data-ng-click="modal('Image')">
+      <i class="material-icons">image</i>
+    </a></li>
+    <li><a title="Aggiungi figura" class="btn-floating grey darken-3" data-ng-click="modal('Shape')">
+      <i class="material-icons">view_quilt</i>
+    </a></li>
+  </ul>
+</div>
+
+<div id="modalImage" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h3>Insert an image</h3>
+    <form action="#">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="image-url" type="url" data-ng-model="image.url" class="validate">
+          <label for="image-url">URL</label>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a class="waves-effect modal-close waves-light btn-flat">Close</a>
+    <a class="waves-effect modal-close waves-light btn-flat" data-ng-click="addImage()">Insert</a>
+  </div>
+</div>
+
+<div id="modalShape" class="modal">
+  <div class="modal-content">
+    <h3>Insert a shape</h3>
+    <img class="modal-close" data-ng-click="addShape('circle')" src="modules/editor/img/circle.svg">
+    <img class="modal-close" data-ng-click="addShape('triangle')" src="modules/editor/img/triangle.svg">
+    <img class="modal-close" data-ng-click="addShape('rect')" src="modules/editor/img/rect.svg">
+    <img class="modal-close" data-ng-click="addShape('line-horizzontal')" src="modules/editor/img/line.svg">
+    <img class="modal-close" data-ng-click="addShape('ellipse')" src="modules/editor/img/ellipse.svg">
+  </div>
+  <div class="modal-footer">
+    <a class="waves-effect modal-close waves-light btn-flat">Cancel</a>
+  </div>
+</div>

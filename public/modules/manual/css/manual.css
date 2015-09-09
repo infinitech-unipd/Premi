@@ -1,0 +1,21 @@
+.collapsible-body a, .collapsible-header a {
+  color: black;
+}
+div .collapsible-header {
+  font-weight: bold;
+}
+.collapsible-body p {
+  padding: 1em;
+  padding-left: 2em;
+}
+.figure .caption {
+  font-style: italic;
+}
+.user-manual li {
+  list-style-type: circle;
+}
+.figure img {
+  -webkit-box-shadow: 1px 1px 14px 0 rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 1px 1px 14px 0 rgba(50, 50, 50, 0.75);
+  box-shadow: 1px 1px 14px 0 rgba(50, 50, 50, 0.75);
+}

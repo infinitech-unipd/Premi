@@ -1,0 +1,12 @@
+<div class="container">
+  <div id="path" data-ng-init="init()" data-ng-controller="ExportController">
+    <div class="row center" data-ng-repeat="container in containers" on-last-export>
+      <canvas id="container{{$index}}"></canvas>
+    </div>
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large waves-effect waves-light download deep-orange"
+         data-ng-click="download()"><i class="material-icons">file_download</i></a>
+    </div>
+  </div>
+</div>

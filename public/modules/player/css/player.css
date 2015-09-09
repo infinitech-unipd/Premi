@@ -1,0 +1,27 @@
+.navigation-btns {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: large;
+  height: 49px;
+}
+.navigation-btns div{
+  height: 100%;
+}
+.navigation-btns .pad{
+  padding-top: 12px;
+}
+.navigation-btns .row {
+  margin: 0;
+}
+canvas.step {
+  opacity: 0.2;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: initial;
+  transition-delay: initial;
+}
+canvas.active {
+  opacity: 1;
+}

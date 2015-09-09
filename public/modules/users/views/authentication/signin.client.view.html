@@ -1,0 +1,39 @@
+<div class="container">
+  <div data-ng-controller="AuthenticationController">
+    <div class="row">
+      <div class="card white darken-4 col s12 m8 offset-m2 l6 offset-l3">
+        <form data-ng-submit="signin()" autocomplete="off">
+          <div class="card-content grey-text">
+            <span class="card-title grey-text">Signin</span>
+            <div class="row">
+              <div class="input-field col s12">
+                <input type="text" id="username" name="username" data-ng-model="credentials.username">
+                <label for="username">Username</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input type="password" id="password" name="password" data-ng-model="credentials.password">
+                <label for="password">Password</label>
+              </div>
+            </div>
+          </div>
+          <div class="card-action">
+            <button type="submit" class="btn btn-primary deep-orange">Sign in</button>&nbsp; or&nbsp;
+            <a href="/#!/signup" class="text-red">Sign up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="signinError" class="modal col s10 offset-s1 m8 offset-m2 l6 offset-l3">
+      <div class="modal-content">
+        <h4>Error</h4>
+        <p>{{error}}.</p>
+      </div>
+      <div class="modal-footer">
+        <a class=" modal-action modal-close waves-effect waves-orange btn-flat">Dismiss</a>
+      </div>
+    </div>
+  </div>
+</div>

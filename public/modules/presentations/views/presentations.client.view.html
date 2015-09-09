@@ -1,0 +1,45 @@
+<div class="container" data-ng-controller="PresentationsController">
+  <div data-ng-init="init()">
+    <div class="row">
+      <div id="modalShare" class="modal col s12 m10 offset-m1 l6 offset-l3">
+        <div class="modal-content">
+          <h4>Share presentation</h4>
+          <p>To share <em>{{selected.info.title}}</em> by <strong>{{selected.author.username}}</strong> copy and paste following URL!</p>
+          <a href="/#!/player/{{selected._id}}" target="_blank">
+            http://www.infinitech.tk:3000/#!/player/{{selected._id}}
+          </a>
+        </div>
+        <div class="modal-footer">
+          <a class="waves-effect modal-close waves-light btn-flat">Close</a>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="center">Explore public presentations</h3>
+    <div class="center" data-ng-hide="presentations.length">There are no public presentations :(</div>
+    <div class="center" data-ng-show="presentations.length === 1">{{presentations.length}} presentation was found!</div>
+    <div class="center" data-ng-show="presentations.length > 1">{{presentations.length}} presentations were found!</div>
+
+    <span class="error" data-ng-if="scope.error.list">{{error.list}}</span>
+
+    <div class="flex-container">
+      <div class="row" data-ng-repeat="presentation in presentations">
+        <div class="col s12">
+          <div class="card grey lighten-3">
+            <div class="card-content text-grey darken-2">
+              <span class="card-title grey-text text-darken-2">{{presentation.info.title}}</span>
+              <p>{{presentation.info.description}}</p>
+              <br>
+              <p>Updated on {{presentation.info.updated | limitTo: 10}}</p>
+              <p>Created by <b>{{presentation.author.username | limitTo: 10}}</b></p>
+            </div>
+            <div class="card-action">
+              <a title="Play" href="/#!/player/{{presentation._id}}" target="_blank"><i class="material-icons grey-text text-darken-2">play_arrow</i></a>
+              <a title="Share" href="" data-ng-click="modal('Share', presentation)"><i class="material-icons grey-text text-darken-2">share</i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

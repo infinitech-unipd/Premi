@@ -1,0 +1,53 @@
+{
+  "node": true, // Enable globals available when code is running inside of the NodeJS runtime environment
+  "browser": true, // Standard browser globals e.g. `window`, `document`
+  "esnext": true, // Allow ES.next specific features such as `const` and `let`
+  "bitwise": false, // Prohibit bitwise operators (&, |, ^, etc.)
+  "curly": false, // Require {} for every new block or scope
+  "eqeqeq": true, // Require triple equals i.e. `===`
+  "immed": true, // Require immediate invocations to be wrapped in parens e.g. `( function(){}() );`
+  "latedef": true, // Prohibit variable use before definition
+  "noarg": true, // Prohibit use of `arguments.caller` and `arguments.callee`
+  "quotmark": true, // Define quotes to string values
+  "regexp": true, // Prohibit `.` and `[^...]` in regular expressions
+  "undef": true, // Require all non-global variables be declared before they are used
+  "unused": false, // Warn unused variables
+  "strict": true, // Require `use strict` pragma in every file
+  "trailing": true, // Prohibit trailing whitespaces
+  "smarttabs": true, // Suppresses warnings about mixed tabs and spaces
+  "maxparams": 8, // Max number of formal parameters allowed per function
+  "maxstatements": 60, // Max number of statements allowed per function
+  "maxcomplexity": 10, // Control cyclomatic complexity throughout your code
+  "maxdepth": 6, // Control how nested do you want your blocks to be
+  "jquery": true, // Defines globals exposed by the jQuery library
+  "globals": { // Globals variables
+    "jasmine": false,
+    "angular": false,
+    "ApplicationConfiguration": false
+  },
+  "predef": [ // Extra globals
+    "define",
+    "require",
+    "exports",
+    "module",
+    "describe",
+    "before",
+    "beforeEach",
+    "after",
+    "afterEach",
+    "it",
+    "inject",
+    "expect",
+    "angular",
+    "fabric",
+    "jsPDF",
+    "Materialize",
+    "spyOn",
+    "browser",
+    "element",
+    "by",
+    "click"
+  ],
+  "devel": false, // Allow `console.log();`
+  "noempty": true // Prohibit use of empty blocks
+}

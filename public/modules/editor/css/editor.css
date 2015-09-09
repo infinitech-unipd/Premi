@@ -1,0 +1,109 @@
+/* Menu */
+editor-menu {
+  width: 1300px;
+  min-width: 100%;
+}
+editor-menu .presentation-title {
+  font-size: large;
+  height: 24px;
+  margin: 0;
+}
+editor-menu .menubar {
+  height: 50px;
+  margin: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+editor-menu .dropdown-content {
+  min-width: 160px;
+}
+.background li {
+  min-width: 100%;
+}
+.color-picker-row ul {
+  margin: 5px;
+  width: 30px;
+  float: left;
+}
+.color-picker-row img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Container */
+editor-container .canvas-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Nav */
+editor-nav {
+  height: 100%;
+  float: left;
+}
+editor-nav .container-nav {
+  top: 74px;
+  height: 95%;
+  background-color: #f0efef;
+  overflow-y: hidden;
+}
+editor-nav .container-nav ul {
+  height: 88%;
+  max-height: 88%;
+  overflow-x: hidden;
+}
+editor-nav .container {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+editor-nav .container-nav {
+  min-width: 310px;
+}
+editor-nav .container li {
+  width: 100%;
+}
+editor-nav .canvas-container {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  position: relative;
+}
+editor-nav .canvas-container canvas {
+  width: 100%;
+}
+editor-nav .container-nav .delete-btn-container .btn-floating {
+  position: absolute;
+  padding: 0;
+  line-height: 0;
+  height: auto;
+  margin-left: -10px;
+  margin-top: -14px;
+}
+editor-nav .container-nav .btn-container {
+  position: relative;
+}
+editor-nav .container-nav .btn-container .move-btn-container {
+  margin-left: 35px;
+}
+editor-nav .container-nav .btn-container .move-btn-container .btn-floating {
+  float: left;
+  margin-left: 1em;
+  margin-top: -30px;
+  padding: 0;
+  line-height: 0;
+  height: auto;
+}
+@media (max-width: 993px) {
+  editor-nav .container-nav li {
+    width: 70%;
+  }
+}
+@media (max-width: 601px) {
+  editor-nav .container-nav li {
+    width: 70%;
+  }
+}

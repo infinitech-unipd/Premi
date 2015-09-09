@@ -1,0 +1,140 @@
+<div class="container" data-ng-controller="HomeController">
+
+  <div class="center-align" data-ng-if="!authentication.user">
+    <h1 class="grey-text text-darken-3">Welcome to <strong>Premi</strong>!</h1>
+  </div>
+
+  <div data-ng-init="list()" data-ng-show="authentication.user">
+    <div id="modalUpdate" class="modal col s10 offset-s1 m8 offset-m2 l6 offset-l3">
+      <div class="modal-content">
+        <h4 class="grey-text text-darken-3">Update title and description</h4>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="updatedInfoTitle" data-ng-model="updates.info.title"
+                     type="text" class="validate" length="40">
+              <label class="active" data-error="The title should be shorter"
+                     for="updatedInfoTitle">New title</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="updatedInfoDescription" data-ng-model="updates.info.description"
+                     type="text" class="validate" length="240">
+              <label class="active" data-error="The description is too long"
+                     for="updatedInfoDescription">New description</label>
+            </div>
+          </div>
+        <div class="switch">
+          <label>
+            Public
+            <input id="privacy" class="deep-orange" data-ng-model="updates.info.privacy"
+                   data-ng-click="updates.info.privacy = !updates.info.privacy" type="checkbox">
+            <span class="lever"></span>
+            Private
+          </label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a class="waves-effect waves-orange btn-flat" data-ng-click="update()">Update</a>
+        <a class="waves-effect modal-close waves-light btn-flat">Cancel</a>
+      </div>
+    </div>
+
+    <div id="modalShare" class="modal col s10 offset-s1 m8 offset-m2 l6 offset-l3">
+      <div class="modal-content">
+        <h4 class="grey-text text-darken-3">Share presentation</h4>
+        <p>To share <em>{{selected.info.title}}</em> copy and paste following URL!</p>
+        <a href="/#!/player/{{selected._id}}" target="_blank">
+          {{host}}/player/{{selected._id}}
+        </a>
+      </div>
+      <div class="modal-footer">
+          <a class="waves-effect modal-close waves-light btn-flat">Close</a>
+      </div>
+    </div>
+
+    <div id="modalDelete" class="modal col s10 offset-s1 m8 offset-m2 l6 offset-l3">
+      <div class="modal-content">
+        <h4 class="grey-text text-darken-3">Delete presentation</h4>
+        <p>Are you sure to delete <em>{{selected.info.title}}</em>?</p>
+      </div>
+      <div class="modal-footer">
+        <a class="waves-effect waves-light btn-flat" data-ng-click="delete()">Delete</a>
+        <a class="waves-effect modal-close waves-light btn-flat">Cancel</a>
+      </div>
+    </div>
+
+    <div id="modalCreate" class="modal col s10 offset-s1 m8 offset-m2 l6 offset-l3">
+      <div class="modal-content">
+        <h4 class="grey-text text-darken-3">Create presentation</h4>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="infoTitle" data-ng-model="info.title"
+                   type="text" class="validate" length="40">
+            <label class="active" data-error="The title should be shorter"
+                   for="infoTitle">Title</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="infoDescription" data-ng-model="info.description"
+                   type="text" class="validate" length="240">
+            <label class="active" data-error="The description is too long"
+                   for="infoDescription">Description</label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a class="waves-effect waves-light btn-flat" data-ng-click="create()">Create</a>
+        <a class="waves-effect waves-light btn-flat" data-ng-click="modalClose('Create')">Cancel</a>
+      </div>
+    </div>
+
+    <div class="center-align">
+      <h2 class="grey-text text-darken-3">
+        Welcome <strong class="truncate">{{authentication.user.firstName}}!</strong>
+      </h2>
+      <div data-ng-if="!presentations.length">
+        <h3 class="grey-text text-darken-3">You do not have any presentations yet!</h3>
+        <p class="grey-text text-darken-3">Create one using the button on the bottom right of the page.</p>
+      </div>
+    </div>
+
+    <span data-ng-if="scope.error.list">{{error.list}}</span>
+
+    <div class="flex-container">
+      <div class="row" data-ng-repeat="presentation in presentations">
+        <div class="col s12">
+          <div class="card grey lighten-3 flex-item">
+            <div class="card-content text-grey darken-2">
+              <span class="card-title grey-text text-darken-2">{{presentation.info.title}}</span>
+              <p>{{presentation.info.description}}</p>
+              <br>
+              <p>Created on {{presentation.info.created | limitTo: 10}}</p>
+              <p>Updated on {{presentation.info.updated | limitTo: 10}}</p>
+            </div>
+            <div class="card-action">
+              <a title="Play" href="/#!/player/{{presentation._id}}"  target="_blank">
+                <i class="material-icons grey-text text-darken-2">play_arrow</i>
+              </a>
+              <a title="Edit title and description" data-ng-click="modal('Update', presentation)">
+                <i class="material-icons grey-text text-darken-2">create</i>
+              </a>
+              <a title="Edit presentation" class="hide-on-med-and-down" href="/#!/editor/{{presentation._id}}">
+                <i class="material-icons grey-text text-darken-2">web</i>
+              </a>
+              <a title="Share" data-ng-click="modal('Share', presentation)">
+                <i class="material-icons grey-text text-darken-2">share</i>
+              </a>
+              <a title="Delete" data-ng-click="modal('Delete', presentation)">
+                <i class="material-icons grey-text text-darken-2">delete</i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large grey darken-2 modal-trigger" data-ng-click="modal('Create')">
+        <i class="large material-icons">add</i>
+      </a>
+    </div>
+  </div>
+</div>
