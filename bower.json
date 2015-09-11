@@ -1,6 +1,6 @@
 {
   "name": "premi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Didactic project of Software Engineering course held in Università degli Studi di Padova during Academic Year 2014-2015.",
   "dependencies": {
     "amaranth": "https://google-fonts.azurewebsites.net/googleFonts/amaranth?family=Amaranth:400,400italic,700,700italic",

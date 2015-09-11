@@ -1,7 +1,7 @@
 {
   "name": "premi",
   "description": "Didactic project of Software Engineering course held in Università degli Studi di Padova during Academic Year 2014-2015.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/infinitech-unipd/Premi"
