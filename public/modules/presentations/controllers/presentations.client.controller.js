@@ -22,11 +22,14 @@
 angular.module('presentations').controller('PresentationsController', [
   '$scope',
   '$rootScope',
+  '$location',
   'Presentations',
-  function($scope, $rootScope, Presentations) {
+  function($scope, $rootScope, $location, Presentations) {
 
     $rootScope.requireHeader = true;
     $rootScope.requireFooter = true;
+
+    $scope.host = $location.host() + '/#!';
 
     /**
      * Presentazione attualmente selezionata.

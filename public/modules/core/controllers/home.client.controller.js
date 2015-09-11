@@ -40,7 +40,7 @@ angular.module('core').controller('HomeController', [
     $rootScope.requireHeader = true;
     $rootScope.requireFooter = true;
 
-    $scope.host = $location.host() + ':' + $location.port() + '/#!';
+    $scope.host = $location.host() + '/#!';
 
     /**
      * Utente attualmente autenticato.

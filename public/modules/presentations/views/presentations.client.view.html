@@ -6,7 +6,7 @@
           <h4>Share presentation</h4>
           <p>To share <em>{{selected.info.title}}</em> by <strong>{{selected.author.username}}</strong> copy and paste following URL!</p>
           <a href="/#!/player/{{selected._id}}" target="_blank">
-            http://www.infinitech.tk:3000/#!/player/{{selected._id}}
+            {{host}}/player/{{selected._id}}
           </a>
         </div>
         <div class="modal-footer">
