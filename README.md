@@ -22,15 +22,15 @@ Premi uses several frameworks and libraries from the web.
 
 Make sure you have installed all of the following prerequisites on your development machine.
 
-1. Download and install Node.js from http://www.nodejs.org/download/ and the npm package manager.
-2. Download and install MongoDB from http://www.mongodb.org/downloads and make sure it is running on the default port 27017.
-3. [Bower](http://bower.io/) is the front-end dependencies manager. Make sure you have installed Node.js and npm first, then install bower globally using npm:
+* Download and install Node.js from http://www.nodejs.org/download/ and the npm package manager.
+* Download and install MongoDB from http://www.mongodb.org/downloads and make sure it is running on the default port 27017.
+* [Bower](http://bower.io/) is the front-end dependencies manager. Make sure you have installed Node.js and npm first, then install bower globally using npm:
 
 ```bash
 $ [sudo] npm install -g bower
 ```
 
-4. [Grunt Task Runner](http://gruntjs.com/) to automate your development process. Make sure you've installed Node.js and npm first, then install grunt globally using npm:
+* [Grunt Task Runner](http://gruntjs.com/) to automate your development process. Make sure you've installed Node.js and npm first, then install grunt globally using npm:
 
 ```bash
 $ [sudo] npm install -g grunt-cli
@@ -102,7 +102,7 @@ Now Premi is running on server port 3000 with *production* environment.
 |-------------|--------|
 | Simone Campagna | [campagna91](https://github.com/campagna91) |
 | Enrico Ceron | [enron92](https://github.com/enron92) |
-| Mattia Favaron | [shake91](https://github.com/shake91) |
+| Mattia Favaron | [MFava91](https://github.com/MFava91) |
 | Antonio Iacobucci | [antonioiacobucci](https://github.com/antonioiacobucci) |
 | Tommaso Miotto | [tmiotto4](https://github.com/tmiotto4) |
 | Alex Ruzzante | [alexrzz](https://github.com/alexrzz) |
